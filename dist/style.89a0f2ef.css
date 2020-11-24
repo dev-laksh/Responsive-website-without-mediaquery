@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  perspective: 1000px;
+}
+
+.cards {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: center;
+  justify-content: center;
+}
+.cards .card {
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  background: linear-gradient(#fcfcfcc4, #2d384e);
+  flex: 1 0 300px;
+}
+.cards .card_content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.cards .card_image {
+  flex: 0 0 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.75s ease-out;
+}
+.cards .card_title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  transition: all 0.75s ease-out;
+}
+.cards .card_snippet {
+  margin-bottom: 0.5rem;
+  transition: all 0.75s ease-out;
+}
+.cards .card_readmore {
+  margin-top: auto;
+  text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2d384e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #5c5cd4;
+}
+
+/*# sourceMappingURL=/style.89a0f2ef.css.map */
